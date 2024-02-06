@@ -5,6 +5,18 @@ import { Component } from '@angular/core';
   templateUrl: './quizz.component.html',
   styleUrl: './quizz.component.css'
 })
-export class QuizzComponent {
 
+export class QuizzComponent {
+  titulo:string=""
+
+  preguntas:any
+  preguntaSeleccionada:any
+
+  respuestas:string[] = []
+  respuestaSeleccionada:string = ""
+
+  preguntaIndex:number = 0
+  preguntaMaxIndex:number = 0
+
+  finalizado:boolean = false
 }
